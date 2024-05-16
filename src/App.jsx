@@ -1,12 +1,9 @@
+import { RouterProvider } from "react-router-dom";
+import Header from "./components/Header";
+import router from "./routers/router";
+
 function App() {
-  return (
-    <>
-    <p>hahahahahahahahahahhahahahsdasd</p>
-    <div>
-      juujjajajajajaj
-    </div>
-    </>
-  )
+  return <RouterProvider router={router} />;
 }
 
-export default App
+export default App;
