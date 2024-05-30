@@ -4,11 +4,11 @@ export const StyledHeader = styled.header`
   display: flex;
   width: 90vw;
   height: 8vh;
-  padding: 1rem 2rem;
+  padding: 0.5rem 2rem;
   background-color: transparent;
   text-align: center;
   align-items: center;
-  margin-bottom: 4rem;
+  margin-bottom: 6rem;
 `;
 
 export const StyledLogo = styled.div`

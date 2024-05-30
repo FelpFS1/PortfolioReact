@@ -5,7 +5,10 @@ export const GlobalStyles = createGlobalStyle`
     *{
         margin: 0;
         padding: 0;
-     
+        box-sizing: border-box;
+        font-family: "Poppins",sans-serif;
+        font-weight: bold;
+        text-decoration: none;
     }
 
     body{
@@ -15,7 +18,5 @@ export const GlobalStyles = createGlobalStyle`
         background-image: url(${imageBg});
         background-size:cover;
         background-repeat: no-repeat;
-      
-       
     }
 `;

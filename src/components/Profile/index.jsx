@@ -1,19 +1,50 @@
-import styled from "styled-components";
-import avatar from "../../assets/profile.jpg";
+import SocialItems from "../SocialMedia";
+import {
+  StyledAvatar,
+  StyledInfoItem,
+  StyledName,
+  StyledProfession,
+  StyledProfile,
+  StyledInfos,
+  StyledIcon,
+} from "./styles";
 
-export const StyledProfile = styled.aside`
-  width: 20vw;
-  height: 100%;
-  background-color: #ffff;
-  border-radius: 20px;
-`;
-export const StyledAvatar = styled.div`
-  position: relative;
-  width: 9vw;
-  height: 12rem;
-  background: url(${avatar}) no-repeat center;
-  background-size: cover;
-  border-radius: 2rem;
-  margin: auto;
-  bottom: 7rem;
-`;
+import { IoLocationOutline } from "react-icons/io5";
+import { LiaBirthdayCakeSolid } from "react-icons/lia";
+import { MdOutlineSchool } from "react-icons/md";
+
+const profileInfosItem = [
+  {
+    icon: <IoLocationOutline />,
+    spanText: "Brasília - DF",
+  },
+  {
+    icon: <LiaBirthdayCakeSolid />,
+    spanText: "23 anos",
+  },
+  {
+    icon: <MdOutlineSchool />,
+    spanText: "Cursando ADS (2024-2026)",
+  },
+];
+
+export default function Profile() {
+  return (
+    <StyledProfile>
+      <StyledAvatar />
+      <StyledName>
+        <h2>Felipe Farias</h2>
+        <StyledProfession>Web Developer</StyledProfession>
+      </StyledName>
+      <SocialItems />
+      <StyledInfos>
+        {profileInfosItem.map((item) => (
+          <StyledInfoItem>
+            <StyledIcon>{item.icon}</StyledIcon>
+            <span>{item.spanText}</span>
+          </StyledInfoItem>
+        ))}
+      </StyledInfos>
+    </StyledProfile>
+  );
+}
