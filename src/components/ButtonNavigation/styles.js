@@ -15,15 +15,15 @@ export const StyledButton = styled.button`
   text-align: center;
   border: none;
   transition: background-color, color ease-in-out 0.3s;
-  color: ${(props) => (props.switchBgColor ? props.theme.white : "")};
+  color: ${(props) => (props.$switchBgColor ? props.theme.white : "")};
   background-color: ${(props) =>
-    props.switchBgColor ? props.theme.purple : props.theme["gray-200"]};
+    props.$switchBgColor ? props.theme.purple : props.theme["gray-200"]};
   cursor: pointer;
   & svg {
     font-size: 1.2rem;
   }
 
   &:hover {
-    color: ${(props) => (props.switchBgColor ? "" : props.theme.purple)};
+    color: ${(props) => (props.$switchBgColor ? "" : props.theme.purple)};
   }
 `;

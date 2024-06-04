@@ -39,7 +39,7 @@ export default function Profile() {
       <SocialItems />
       <StyledInfos>
         {profileInfosItem.map((item) => (
-          <StyledInfoItem>
+          <StyledInfoItem key={item.spanText}>
             <StyledIcon>{item.icon}</StyledIcon>
             <span>{item.spanText}</span>
           </StyledInfoItem>

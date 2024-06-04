@@ -18,14 +18,13 @@ export const StyledSection = styled.section`
 export const StyledPages = styled.div`
   width: 100%;
   margin-top: 100px;
-  padding: 2rem;
   background-color: ${(props) => props.theme.white};
+  padding: 2rem;
   border-radius: 2rem;
-  overflow-y: scroll;
+  overflow-y: auto;
 
   &::-webkit-scrollbar {
-    width: 20px;
-    margin-right: 10px;
+    width: 0;
   }
 
   &::-webkit-scrollbar-track {

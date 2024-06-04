@@ -1,6 +1,10 @@
 import { createGlobalStyle } from "styled-components";
 import imageBg from "../assets/bg-image.png";
 export const GlobalStyles = createGlobalStyle`
+#root{
+    width: 100%;
+    height: 100%;
+}
 
     *{
         margin: 0;
@@ -19,4 +23,5 @@ export const GlobalStyles = createGlobalStyle`
         background-size:cover;
         background-repeat: no-repeat;
     }
+
 `;
