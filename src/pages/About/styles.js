@@ -49,16 +49,32 @@ export const TecnologiesIcons = styled.div`
     gap: 1rem;
 
     li {
-      display: inline-block;
-      position: relative;
+      display: flex;
+      flex-direction: column;
       list-style: none;
-      transition: all;
+
       align-items: center;
       transition: transform 0.3s ease;
       cursor: pointer;
 
       &:hover {
         transform: scale(1.2);
+      }
+      &:nth-child(5) {
+        animation: rotate 5s linear infinite;
+
+        &:hover {
+          animation: none;
+        }
+      }
+    }
+
+    @keyframes rotate {
+      0% {
+        transform: rotate(0);
+      }
+      100% {
+        transform: rotate(-360deg);
       }
     }
   }
