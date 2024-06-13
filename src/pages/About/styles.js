@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import tecnoImages from "../../assets/Tecno-image.svg";
+import breakpoints from "../../styles/breakpoints";
 export const AboutContainer = styled.div`
   width: 100%;
   margin: auto;
@@ -7,7 +8,6 @@ export const AboutContainer = styled.div`
 
 export const AboutContent = styled.div`
   width: 100%;
-
   display: flex;
   flex-direction: column;
   gap: 2rem;
@@ -17,6 +17,11 @@ export const AboutContent = styled.div`
   p {
     font-size: 1.2rem;
     text-align: justify;
+  }
+
+  @media ${breakpoints.bg} {
+    gap: 1rem;
+    padding: 0.5rem;
   }
 `;
 export const TechnologiesContent = styled.div`
@@ -48,6 +53,11 @@ export const TecnologiesIcons = styled.div`
     margin-top: 2rem;
     flex-direction: row;
     gap: 1rem;
+
+    @media ${breakpoints.bg} {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+    }
 
     li {
       display: flex;

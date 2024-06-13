@@ -1,13 +1,17 @@
 import styled from "styled-components";
 import avatar from "../../assets/profile.jpg";
+import breakpoints from "../../styles/breakpoints";
 
 export const StyledProfile = styled.aside`
   width: 25vw;
   min-width: 200px;
   position: relative;
-  height: 100%;
   background-color: ${(props) => props.theme.white};
   border-radius: 20px;
+  @media ${breakpoints.md} {
+    width: 100%;
+    margin-left: 0;
+  }
 `;
 export const StyledAvatar = styled.div`
   position: relative;
@@ -15,9 +19,17 @@ export const StyledAvatar = styled.div`
   height: 10rem;
   background: url(${avatar}) no-repeat center;
   background-size: cover;
-  border-radius: 1.6rem;
+  border-radius: 20px;
+  border: 2px solid white;
   margin: auto;
   bottom: 6rem;
+
+  @media ${breakpoints.bg} {
+    width: 60%;
+  }
+  @media ${breakpoints.md} {
+    width: 50%;
+  }
 `;
 export const StyledName = styled.div`
   display: flex;
@@ -47,16 +59,22 @@ export const StyledProfession = styled.span`
 export const StyledInfos = styled.div`
   display: flex;
   flex-direction: column;
+  position: relative;
   gap: 1rem;
   width: 80%;
   background-color: ${(props) => props.theme["gray-200"]};
   border-radius: 5px;
   padding: 1rem;
   margin: auto;
+  bottom: 2rem;
 
   & span {
     font-size: 0.8rem;
     font-weight: 600;
+  }
+
+  @media ${breakpoints.md} {
+    bottom: 4rem;
   }
 `;
 

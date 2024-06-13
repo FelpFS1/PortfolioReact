@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import breakpoints from "../../styles/breakpoints";
 
 export const ContactContent = styled.div`
   width: 100%;
@@ -7,9 +8,12 @@ export const ContactContent = styled.div`
   gap: 2rem;
   align-items: center;
   padding: 2rem 3rem;
+  form {
+    width: 100%;
+  }
 
   input {
-    width: 20rem;
+    width: 100%;
     font-weight: lighter;
     background-color: ${(props) => props.theme["gray-200"]};
     border: none;
@@ -29,14 +33,25 @@ export const ContactContent = styled.div`
       opacity: 1;
     }
   }
+
+  @media ${breakpoints.bg} {
+    padding: 0;
+  }
 `;
 export const InputsContainer = styled.div`
   display: flex;
-  gap: 1.5rem;
-  margin-bottom: 3rem;
+  flex-direction: row;
+  gap: 2rem;
+  margin-bottom: 1.5rem;
+
+  @media ${breakpoints.bg} {
+    flex-direction: column;
+    gap: 0;
+  }
 `;
 export const InputContainer = styled.div`
   display: flex;
+  width: 100%;
   position: relative;
   padding-top: 0.8125rem;
   flex-direction: column;
@@ -49,11 +64,11 @@ export const InputContainer = styled.div`
     -webkit-transition: all 0.2s ease-in-out;
     -moz-transition: all 0.1s linear;
     opacity: 0.5;
-    box-sizing: border-box;
   }
 `;
 export const AreaContainer = styled.div`
   display: flex;
+  width: 100%;
   flex-direction: column;
   position: relative;
 
