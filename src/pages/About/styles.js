@@ -7,11 +7,12 @@ export const AboutContainer = styled.div`
 
 export const AboutContent = styled.div`
   width: 100%;
+
   display: flex;
   flex-direction: column;
   gap: 2rem;
   margin: auto;
-  padding: 2rem 10rem;
+  padding: 2rem 5rem;
 
   p {
     font-size: 1.2rem;

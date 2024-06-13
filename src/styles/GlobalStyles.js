@@ -2,8 +2,9 @@ import { createGlobalStyle } from "styled-components";
 import imageBg from "../assets/bg-image.png";
 export const GlobalStyles = createGlobalStyle`
 #root{
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
 }
 
     *{

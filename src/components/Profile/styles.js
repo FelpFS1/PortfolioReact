@@ -3,6 +3,7 @@ import avatar from "../../assets/profile.jpg";
 
 export const StyledProfile = styled.aside`
   width: 25vw;
+  min-width: 200px;
   position: relative;
   height: 100%;
   background-color: ${(props) => props.theme.white};

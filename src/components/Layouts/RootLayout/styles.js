@@ -12,15 +12,17 @@ export const StyledSection = styled.section`
   display: flex;
   margin-left: 2rem;
   width: 100vw;
+
   height: 80vh;
 `;
 
 export const StyledPages = styled.div`
-  width: 100%;
+  width: 71vw;
+  position: relative;
   margin-top: 100px;
   background-color: ${(props) => props.theme.white};
   padding: 2rem;
-  border-radius: 2rem;
+  border-radius: 32px;
   overflow-y: auto;
 
   &::-webkit-scrollbar {
