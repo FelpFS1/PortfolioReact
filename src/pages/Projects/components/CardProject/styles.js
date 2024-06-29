@@ -98,6 +98,10 @@ export const Content = styled(Dialog.Content)`
       color: ${(props) => props.theme.purple};
     }
   }
+
+  @media ${breakpoints.sm} {
+    padding: 1rem;
+  }
 `;
 
 export const AboutProject = styled.section`
@@ -151,6 +155,7 @@ export const DescriptionProject = styled.div`
 
 export const TechnologiesProject = styled.section`
   width: 100%;
+  margin-bottom: 1rem;
 
   h1 {
     text-transform: uppercase;
