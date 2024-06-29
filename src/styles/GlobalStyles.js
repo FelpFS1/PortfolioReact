@@ -14,6 +14,8 @@ export const GlobalStyles = createGlobalStyle`
         font-family: "Poppins",sans-serif;
         font-weight: bold;
         text-decoration: none;
+
+       
     }
 
     body{
@@ -23,6 +25,7 @@ export const GlobalStyles = createGlobalStyle`
         background-image: url(${imageBg});
         background-size:cover;
         background-repeat: no-repeat;
+
     }
 
 `;

@@ -7,7 +7,6 @@ import { MdOutlineEmail } from "react-icons/md";
 import ButtonNavigation from "../ButtonNavigation";
 
 import { StyledNavigation } from "./styles";
-import { useEffect, useLayoutEffect, useState } from "react";
 
 export default function Navigation() {
   const { pathname } = useLocation();

@@ -9,6 +9,6 @@ export const StyledNavigation = styled.section`
   height: 4.5rem;
   padding: 0.4rem;
   align-items: center;
-  border-radius: 1.2rem;
+  border-radius: 19px;
   background-color: ${(props) => props.theme.white};
 `;

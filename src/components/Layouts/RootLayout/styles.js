@@ -19,26 +19,29 @@ export const StyledSection = styled.section`
   display: flex;
   margin-left: 2rem;
   height: 80vh;
+  bottom: 6rem;
 
-  @media ${breakpoints.bg} {
+  @media ${breakpoints.lg} {
     width: 63vw;
     margin-left: 1rem;
   }
   @media ${breakpoints.md} {
     width: 100%;
+    bottom: 0;
     margin: 0;
   }
 `;
 
 export const StyledPages = styled.div`
   width: 71vw;
-  min-height: 400px;
+  min-height: 100%;
   position: relative;
   margin-top: 100px;
   background-color: ${(props) => props.theme.white};
   padding: 2rem;
   border-radius: 32px;
-  overflow-y: auto;
+
+  overflow-x: auto;
 
   &::-webkit-scrollbar {
     width: 0;

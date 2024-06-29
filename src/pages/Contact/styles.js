@@ -3,10 +3,12 @@ import breakpoints from "../../styles/breakpoints";
 
 export const ContactContent = styled.div`
   width: 100%;
+  height: 60vh;
   display: flex;
   flex-direction: column;
   gap: 2rem;
   align-items: center;
+  justify-content: center;
   padding: 2rem 3rem;
   form {
     width: 100%;
@@ -34,7 +36,7 @@ export const ContactContent = styled.div`
     }
   }
 
-  @media ${breakpoints.bg} {
+  @media ${breakpoints.lg} {
     padding: 0;
   }
 `;
@@ -44,7 +46,7 @@ export const InputsContainer = styled.div`
   gap: 2rem;
   margin-bottom: 1.5rem;
 
-  @media ${breakpoints.bg} {
+  @media ${breakpoints.lg} {
     flex-direction: column;
     gap: 0;
   }

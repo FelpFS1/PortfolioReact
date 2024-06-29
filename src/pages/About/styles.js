@@ -19,9 +19,14 @@ export const AboutContent = styled.div`
     text-align: justify;
   }
 
-  @media ${breakpoints.bg} {
+  @media ${breakpoints.lg} {
     gap: 1rem;
     padding: 0.5rem;
+  }
+  @media ${breakpoints.md} {
+    p {
+      text-align: start;
+    }
   }
 `;
 export const TechnologiesContent = styled.div`
@@ -54,7 +59,7 @@ export const TecnologiesIcons = styled.div`
     flex-direction: row;
     gap: 1rem;
 
-    @media ${breakpoints.bg} {
+    @media ${breakpoints.lg} {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
     }

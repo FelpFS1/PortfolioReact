@@ -18,7 +18,7 @@ export const StyledAvatar = styled.div`
   width: 50%;
   height: 10rem;
   background: url(${avatar}) no-repeat center;
-  background-size: cover;
+  background-size: 100%;
   border-radius: 20px;
   border: 2px solid white;
   margin: auto;
@@ -28,7 +28,7 @@ export const StyledAvatar = styled.div`
     width: 60%;
   }
   @media ${breakpoints.md} {
-    width: 50%;
+    width: 250px;
   }
 `;
 export const StyledName = styled.div`
