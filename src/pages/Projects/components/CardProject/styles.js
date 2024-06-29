@@ -89,7 +89,6 @@ export const Content = styled(Dialog.Content)`
     position: fixed;
     border: 0;
     background-color: transparent;
-    top: 2rem;
     right: 2rem;
     cursor: pointer;
     line-height: 0;
@@ -101,6 +100,13 @@ export const Content = styled(Dialog.Content)`
 
   @media ${breakpoints.sm} {
     padding: 1rem;
+    h2 {
+      width: 250px;
+      font-size: 1.2rem;
+    }
+    button {
+      right: 0.5rem;
+    }
   }
 `;
 
