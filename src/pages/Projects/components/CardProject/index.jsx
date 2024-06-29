@@ -6,11 +6,13 @@ import {
   CardFooter,
   CardImage,
   DescriptionProject,
+  TechnologiesProject,
 } from "./styles";
 import { IoClose } from "react-icons/io5";
 import { Content, Overlay } from "./styles";
 
 export default function CardProject({ data }) {
+  const isBackend = data.description.technologies.backend;
   return (
     <CardContainer>
       <CardImage>
@@ -36,17 +38,31 @@ export default function CardProject({ data }) {
                 <iframe
                   src={data.videoURL}
                   allow="autoplay; fullscreen"
-                  allowFullScreen
+                  title={data.title}
                 />
                 <DescriptionProject>
                   <Dialog.Description>
                     {data.description.fullContent}
                   </Dialog.Description>
-                  <h1>Tecnologias</h1>
-                  <h3>Frontend</h3>
-                  {data.description.technologies.frontend.map((item) => (
-                    <li>{item}</li>
-                  ))}
+                  <TechnologiesProject>
+                    <h1>Tecnologias</h1>
+                    <h3>Frontend</h3>
+                    <ul>
+                      {data.description.technologies.frontend.map((item) => (
+                        <li key={item}>{item}</li>
+                      ))}
+                    </ul>
+                    {isBackend && (
+                      <>
+                        <h3>Backend</h3>
+                        <ul>
+                          {isBackend.map((item) => (
+                            <li key={item}>{item}</li>
+                          ))}
+                        </ul>
+                      </>
+                    )}
+                  </TechnologiesProject>
                 </DescriptionProject>
               </AboutProject>
             </Content>

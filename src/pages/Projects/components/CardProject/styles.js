@@ -22,6 +22,10 @@ export const CardContainer = styled.div`
       font-size: 0.8rem;
     }
   }
+
+  @media ${breakpoints.sm} {
+    height: 275px;
+  }
 `;
 
 export const CardImage = styled.div`
@@ -139,11 +143,27 @@ export const DescriptionProject = styled.div`
     font-size: 1.2rem;
     font-weight: 400;
   }
+
+  @media ${breakpoints.sm} {
+    width: 100%;
+  }
+`;
+
+export const TechnologiesProject = styled.section`
+  width: 100%;
+
   h1 {
     text-transform: uppercase;
     text-align: center;
   }
-  @media ${breakpoints.sm} {
-    width: 100%;
+
+  li {
+    margin-left: 1rem;
+    list-style: none;
+    font-weight: 500;
+    &::before {
+      content: "➜ ";
+      color: ${(props) => props.theme.purple};
+    }
   }
 `;

@@ -9,7 +9,7 @@ export const projects = [
     description: {
       content: "Simples, para gerenciar estoque de produtos.",
       fullContent:
-        "Projeto feito para estudos,no princípio foi pedido um gerenciador simples, com os dados sendos persistidos no localstorage e sem autenticação. Mas resolvi ir além, então usei mongoDB como banco e NodeJs no backend, usei também JWT para autenticação via token. Nunca tinha usado essas tecnologias, mas posso dizer que valeu a pena toda pesquisa e esforços feitos para concluir esse desafio com sucesso! ",
+        "Projeto feito para estudos,no princípio foi pedido um gerenciador simples, com os dados sendo persistidos no localstorage e sem autenticação. Mas resolvi ir além, então usei mongoDB como banco e NodeJs no backend, usei também JWT para autenticação via token. Nunca tinha usado essas tecnologias, mas posso dizer que valeu a pena toda pesquisa e esforços feitos para concluir esse desafio com sucesso! ",
       technologies: {
         frontend: ["TypeScript", "React com Vite"],
         backend: ["NodeJS", "MongoDB", "Prisma"],
@@ -24,10 +24,9 @@ export const projects = [
     description: {
       content: "Simples, para gerenciar estoque de produtos.",
       fullContent:
-        "Projeto feito para estudos,no princípio foi pedido um gerenciador simples, com os dados sendos persistidos no localstorage e sem autenticação. Mas resolvi ir além, então usei mongoDB como banco e NodeJs no backend, usei também JWT para autenticação via token. Nunca tinha usado essas tecnologias, mas posso dizer que valeu a pena toda pesquisa e esforços feitos para concluir esse desafio com sucesso! ",
+        "Projeto feito para estudos,no princípio foi pedido um gerenciador simples, com os dados sendo persistidos no localstorage e sem autenticação. Mas resolvi ir além, então usei mongoDB como banco e NodeJs no backend, usei também JWT para autenticação via token. Nunca tinha usado essas tecnologias, mas posso dizer que valeu a pena toda pesquisa e esforços feitos para concluir esse desafio com sucesso! ",
       technologies: {
         frontend: ["TypeScript", "React com Vite"],
-        backend: ["NodeJS", "MongoDB", "Prisma"],
       },
     },
   },
