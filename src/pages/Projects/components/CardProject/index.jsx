@@ -1,6 +1,7 @@
 import * as Dialog from "@radix-ui/react-dialog";
 import {
   AboutProject,
+  ButtonOpenLink,
   CardContainer,
   CardContent,
   CardFooter,
@@ -60,8 +61,10 @@ export default function CardProject({ data }) {
                             <li key={item}>{item}</li>
                           ))}
                         </ul>
+                        
                       </>
                     )}
+                    <ButtonOpenLink href={data.link} target="_blank">Deploy do projeto</ButtonOpenLink>
                   </TechnologiesProject>
                 </DescriptionProject>
               </AboutProject>

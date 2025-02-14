@@ -29,8 +29,11 @@ export const CardContainer = styled.div`
 `;
 
 export const CardImage = styled.div`
-  width: 90%;
+  width: 100%;
   height: 65%;
+  display:flex;
+  justify-content: center;
+  margin-bottom: 0.5rem;
 
   img {
     max-width: 100%;
@@ -178,3 +181,19 @@ export const TechnologiesProject = styled.section`
     }
   }
 `;
+
+export const ButtonOpenLink = styled.a`
+position: absolute;
+  padding: 0.2rem;
+  border: 2px solid ${props => props.theme.purple};
+  border-radius: 0.5rem;
+  bottom: 0.5rem;
+  right: 0.5rem;
+  cursor: pointer;
+  
+  &:hover {
+    color: ${props => props.theme.purple};
+    border-color: ${props => props.theme.black};
+  }
+
+`

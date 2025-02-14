@@ -12,6 +12,12 @@ import {
 import { IoLocationOutline } from "react-icons/io5";
 import { LiaBirthdayCakeSolid } from "react-icons/lia";
 import { MdOutlineSchool } from "react-icons/md";
+import { FaDownload } from "react-icons/fa6";
+
+const dateNow = new Date()
+  const birthDate = new Date("2000/11/21");
+
+ const myAge = dateNow.getFullYear() - birthDate.getFullYear()
 
 const profileInfosItem = [
   {
@@ -20,12 +26,16 @@ const profileInfosItem = [
   },
   {
     icon: <LiaBirthdayCakeSolid />,
-    spanText: "23 anos",
+    spanText: myAge - 1,
   },
   {
     icon: <MdOutlineSchool />,
-    spanText: "Cursando ADS (2024-2026)",
+    spanText: "Cursando ADS (2023-2025)",
   },
+  {
+    icon:<FaDownload/>,
+    spanText: '<a href="/FelipeFestagio.pdf" download="Curriculo_Felipe.pdf">Currículo</a>'
+  }
 ];
 
 export default function Profile() {
@@ -41,7 +51,7 @@ export default function Profile() {
         {profileInfosItem.map((item) => (
           <StyledInfoItem key={item.spanText}>
             <StyledIcon>{item.icon}</StyledIcon>
-            <span>{item.spanText}</span>
+            <span dangerouslySetInnerHTML={{ __html: item.spanText }}></span>
           </StyledInfoItem>
         ))}
       </StyledInfos>

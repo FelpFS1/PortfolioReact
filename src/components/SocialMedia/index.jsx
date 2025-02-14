@@ -9,14 +9,14 @@ export default function SocialItems() {
       <ul>
         <li>
           <SocialButton>
-            <a href="">
+            <a href="https://github.com/FelpFS1" target="_blank">
               <FaGithub />
             </a>
           </SocialButton>
         </li>
         <li>
           <SocialButton>
-            <a href="https://www.linkedin.com/in/felipefariasdev">
+            <a href="https://www.linkedin.com/in/felipefariasdev"  target="_blank">
               <FaLinkedinIn color={"blue"} />
             </a>
           </SocialButton>
