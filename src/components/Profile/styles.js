@@ -29,6 +29,7 @@ export const StyledAvatar = styled.div`
   }
   @media ${breakpoints.md} {
     width: 250px;
+    height: 200px;
   }
 `;
 export const StyledName = styled.div`
